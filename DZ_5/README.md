@@ -2,14 +2,9 @@
 
 Задачи по семинару №5
 
-Задача №1 - РЕШЕНА !!!
+Задача №1 - решена
 
-Задача №2 в процессе выполнения... Постараюсь загрузить до 20:00
-
-Пока что на второй виртуальной машине выдает ошибку:
-
-Error response from daemon: Timeout was reached before node joined. The attempt to join the swarm will continue in the background. Use the "docker info" command to see the current swarm status of your node.
-
+Задача №2 - решена
 
 ---------------------------------------------------------------
 Задание 1
