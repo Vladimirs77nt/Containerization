@@ -5,8 +5,6 @@
 2) задеплоить на ноду несколько экземляров какого0нибудь контейнера, например nginx
 3) обязательно проверить и зафиксировать результаты, чтобы можно было выслать преподавателю для проверки
 
-Смотрите скриншоты в папке: Домашнее задание 2 со звездочкой
-
 Сначала ничего не получалось - на второй машине (ноде) выдавалась ошибка:
 Error response from daemon: Timeout was reached before node joined. The attempt to join the swarm will continue in the background. Use the "docker info" command to see the current swarm status of your node.
 
@@ -16,4 +14,9 @@ Error response from daemon: Timeout was reached before node joined. The attempt 
 
 Скриншот 1 - на главной ноде запустил docker swarm init (далее там же видно что присоединилась вторая нода)
 Скриншот 2 - на второй ноде запустил docker swarm join... присоединил 
-Скриншот 3 - на первой ноде
+Скриншот 3 - на первой ноде командой "docker node update --label-add tokyo ..." задаем имя второй ноды
+Скриншот 4 - запускаем команду "docker service create --name nginx --label tokyo --replicas 3 nginx:alpine" на 3 контейнера
+Скриншот 5 - на ведомой машине види созданные два контейнера
+Скриншот 6 - на главной машине видим третий контейнер
+
+Смотрите скриншоты в папке: Домашнее задание 2 со звездочкой
